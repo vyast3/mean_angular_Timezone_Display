@@ -1,0 +1,7 @@
+<h1>{{heading}}</h1>
+<button (click)= "getTime('PST')" [ngClass]="{selected:selectedVal == 'PST'}">PST</button>
+<button (click)= "getTime('MST')" [ngClass]="{selected:selectedVal == 'MST'}">MST</button>
+<button (click)= "getTime('EST')" [ngClass]="{selected:selectedVal == 'EST'}">EST</button>
+<button (click)= "getTime('CST')" [ngClass]="{selected:selectedVal == 'CST'}">CST</button>
+<button (click)= "clear()" [ngClass]="{selected:selectedVal == 'clear'}">Clear</button>
+<p>{{time | date:'medium'}}</p>
